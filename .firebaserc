@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "artasce-website"
+  },
+  "targets": {
+    "artasce-website": {
+      "hosting": {
+        "artasce-company-site": [
+          "artasce-company"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
