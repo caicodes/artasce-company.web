@@ -1,24 +1,17 @@
 <script setup>
 import { useColorMode, useCycleList } from "@vueuse/core"
-import { liveThemes } from "../../constants/Theme"
+// import { liveThemes } from "../../constants/Theme"
 
 const mode = useColorMode({
   attribute: "data-theme",
   emitAuto: true,
   mode: {
-    // coffee: 'coffee',
-    // synthwave: 'synthwave',
-    // cyberpunk: 'cyberpunk',
-    // forest: 'forest',
-    // aqua: 'aqua',
-    // black: 'black',
-    // luxury: 'luxury',
-    luxury: "luxury",
+    winter: "winter",
   },
 })
-console.log(liveThemes)
-// const { next } = useCycleList(['light', 'dark'], { initialValue: mode })
-const { next } = useCycleList(liveThemes, { initialValue: mode })
+// console.log(liveThemes)
+const { next } = useCycleList(["winter", "dark"], { initialValue: mode })
+// const { next } = useCycleList(liveThemes, { initialValue: mode })
 </script>
 
 <template>

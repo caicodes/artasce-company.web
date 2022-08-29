@@ -9,4 +9,6 @@ vue/vite version of artascecreative landing...
 [Live Site](https://artasce-company.web.app/)
 
 
+## update, using slider/login for a one page portal for now... good starting point for this...
+
 
