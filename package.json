@@ -17,7 +17,7 @@
     "gsap": "^3.11.0",
     "pinia": "^2.0.20",
     "vue": "^3.2.37",
-    "vue-slick-carousel": "^1.0.6"
+    "vue3-carousel": "^0.1.46"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",

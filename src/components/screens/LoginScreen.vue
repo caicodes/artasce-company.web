@@ -1,9 +1,5 @@
-<script setup>
-import Logo from "../app/Logo.svg.vue"
-import ThemeChanger from "../app/ThemeChanger.vue"
-</script>
 <template>
-  <main>
+  <main class="mainScreen">
     <header
       class="fixed top-0 left-0 w-full px-3rem py-2rem flex justify-between place-items-center z-[99]"
     >
@@ -11,46 +7,36 @@ import ThemeChanger from "../app/ThemeChanger.vue"
       <div class="logo w-16 h-16 m-4">
         <Logo />
       </div>
-      <nav class="menu-main">main menu</nav>
+      <nav class="menu-main">menu</nav>
     </header>
     <div class="content flex h-screen">
-      <div
-        class="left relative w-1/2 flex justify-center align-middle py-40 text-center overflow-hidden"
-      >
-        <div
-          class="blob blob1 absolute rounded-full w-[764px] h-[764px] bg-accent/10"
-        ></div>
-        <div
-          class="blob blob2 absolute rounded-full w-[764px] h-[764px] bg-secondary/10"
-        ></div>
-        <div class="left-inner">
-          <h5 class="uppercase font-light mt-8">Artasce Creative</h5>
-          <h1 class="uppercase font-thin text-5xl my-8">Company Portal</h1>
-          <h5 class="max-w-[80%] mx-auto font-light pb-12 text-3xl">
-            Partner Access
-          </h5>
-          <p class="max-w-[60%] mx-auto pb-4 mb-16">
-            Access your client portals, online store admin areas, firebase
-            consoles or partner control panels from this Artasce Creative login.
-            For more information, contact us!
-          </p>
-          <button class="btn btn-primary btn-lg font-light">Learn More</button>
-        </div>
-      </div>
+      <LeftPanel />
       <div class="right w-1/2">
-        <div class="slider">
-          <div class="item"><img src="images/pic1.jpg" alt="" /></div>
-          <div class="item"><img src="images/pic2.jpg" alt="" /></div>
-          <div class="item"><img src="images/pic3.jpg" alt="" /></div>
-          <div class="item"><img src="images/pic4.jpg" alt="" /></div>
+        <div class="carousel-wrap relative">
+          <Carousel :slides="mainCarouselSlides" />
         </div>
       </div>
     </div>
   </main>
 </template>
 
+<script setup>
+import { onMounted } from "vue"
+import Logo from "../app/Logo.svg.vue"
+import ThemeChanger from "../app/ThemeChanger.vue"
+import { mainCarouselSlides } from "../../constants/Slides"
+import Carousel from "../carousel/Carousel.vue"
+import LeftPanel from "../LeftPanel.vue"
+
+onMounted(() => {
+  console.log(mainCarouselSlides)
+})
+</script>
+
 <style>
 .right img {
+  position: relative;
+  right: 0;
   width: 100%;
   height: 100vh;
   object-fit: cover;
