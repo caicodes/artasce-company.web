@@ -3,7 +3,6 @@ import { onMounted } from "vue"
 import gsap from "gsap"
 import ScrollTo from "gsap/ScrollToPlugin"
 import ScrollTrigger from "gsap/ScrollTrigger"
-import { btnListFull } from "../../constants/Styleguide"
 import { mainMenuItems } from "../../constants/Menus"
 import { siteName } from "../../constants/Settings"
 import ThemeChanger from "./ThemeChanger.vue"
@@ -49,11 +48,6 @@ onMounted(() => {
       </div>
     </div>
 
-    <!-- <NavBarBelow /> -->
-    <div
-      class="navbarbelow pt-16 -mt-1.5 fixed z-30 bg-base-200/50 w-full justify-end flex"
-    >
-      <ThemeChanger />
-    </div>
+    <div class="fixed top-16 right-2 z-50 m-1"><ThemeChanger /></div>
   </div>
 </template>

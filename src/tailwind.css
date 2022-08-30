@@ -3,3 +3,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary: #9e86ff;
+  --primary-focus: #a991f7;
+  --primary-content: white;
+  --secondary: #b535f6;
+  --secondary-focus: #c800ff;
+  --secondary-content: white;
+  --accent: #7e22ce;
+  --accent-focus: #7b2abf;
+  --accent-content: #ff00e5;
+  --neutral: #480cb0;
+  --base-100: #030326;
+  --base-300: #0e0538;
+}
+
+:root[data-theme="dark"] {
+  --primary: orange;
+  --primary-focus: #a991f7;
+  --primary-content: white;
+  --secondary: #b535f6;
+  --secondary-focus: #c800ff;
+  --secondary-content: white;
+  --accent: #7e22ce;
+  --accent-focus: #7b2abf;
+  --accent-content: #ff00e5;
+  --neutral: #480cb0;
+  --base-100: #030326;
+  --base-300: #0e0538;
+}
