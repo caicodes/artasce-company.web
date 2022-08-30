@@ -1,6 +1,6 @@
 <template>
   <div
-    class="left relative w-1/2 flex justify-center align-middle py-40 text-center overflow-hidden"
+    class="left relative w-full md:w-1/2 flex justify-center align-middle py-40 text-center overflow-hidden"
   >
     <div
       class="blob blob1 absolute rounded-full w-[764px] h-[764px] bg-accent/10"
