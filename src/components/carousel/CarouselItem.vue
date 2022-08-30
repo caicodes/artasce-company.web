@@ -1,5 +1,5 @@
 <template>
-  <div class="carousel-item" v-show="currentSlide === index">
+  <div class="relative" v-show="currentSlide === index">
     <img :src="slide" />
   </div>
 </template>
@@ -8,4 +8,12 @@
 defineProps(["slide", "currentSlide", "index"])
 </script>
 
-<style scoped></style>
+<style scoped>
+img {
+  position: relative;
+  @apply w-screen;
+
+  height: 100vh;
+  object-fit: cover;
+}
+</style>

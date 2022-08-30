@@ -12,9 +12,7 @@
     <div class="content flex h-screen">
       <LeftPanel />
       <div class="right w-1/2">
-        <div class="carousel-wrap relative">
-          <Carousel :slides="mainCarouselSlides" />
-        </div>
+        <Carousel :slides="mainCarouselSlides" />
       </div>
     </div>
   </main>
@@ -34,14 +32,9 @@ onMounted(() => {
 </script>
 
 <style>
-.right img {
-  position: relative;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
+.logo {
+  @apply text-primary;
 }
-
 .blob1 {
   right: -250px;
   top: -650px;

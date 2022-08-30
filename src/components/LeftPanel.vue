@@ -9,7 +9,7 @@
       class="blob blob2 absolute rounded-full w-[764px] h-[764px] bg-secondary/10"
     ></div>
     <div class="left-inner">
-      <h1 class="uppercase font-thin text-5xl text-accent mb-4 opacity-25">
+      <h1 class="uppercase font-thin text-5xl text-accent mb-4 opacity-30">
         Company Portal
       </h1>
 
