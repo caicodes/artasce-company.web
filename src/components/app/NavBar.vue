@@ -6,6 +6,7 @@ import ScrollTrigger from "gsap/ScrollTrigger"
 import { btnListFull } from "../../constants/Styleguide"
 import { mainMenuItems } from "../../constants/Menus"
 import { siteName } from "../../constants/Settings"
+import ThemeChanger from "./ThemeChanger.vue"
 
 const btnList = btnListFull
 const items = mainMenuItems
@@ -16,14 +17,6 @@ const handleClick = (item) => {
   console.log("yo, clicked ", item)
   gsap.to(window, {
     duration: 1,
-    ease: "expo.inOut",
-    scrollTo: { y: "#" + item },
-  })
-}
-const handleClick2 = (item) => {
-  console.log("yo, clicked ", item)
-  gsap.to(window, {
-    duration: 2,
     ease: "expo.inOut",
     scrollTo: { y: "#" + item },
   })
@@ -79,21 +72,10 @@ onMounted(() => {
     </div>
 
     <!-- <NavBarBelow /> -->
-    <div class="navbarbelow pt-16 -mt-1.5 fixed z-30 bg-base-200/50 w-full">
-      <ul class="menu menu-horizontal bg-base-300/20">
-        <li
-          v-for="item in btnList"
-          :key="item"
-          :class="`text-${item} bg-${item}/10`"
-        >
-          <a
-            @click="handleClick2(item)"
-            :class="`btn-${item}`"
-            class="btn-link hover:bg-inherit"
-            >{{ item }}</a
-          >
-        </li>
-      </ul>
+    <div
+      class="navbarbelow pt-16 -mt-1.5 fixed z-30 bg-base-200/50 w-full justify-end flex"
+    >
+      <ThemeChanger />
     </div>
   </div>
 </template>
