@@ -45,6 +45,7 @@ onMounted(() => {
             <a @click="handleClick(item)">{{ item }}</a>
           </li>
         </ul>
+        <ThemeChanger />
       </div>
     </div>
 
