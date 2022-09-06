@@ -1,4 +1,6 @@
-# artascecreative landing (vue)
+<img src='./project/artasce-company-landing.jpg' alt='client portal, artasce creative' />
+
+# artasce creative client portal landing 
 
 vue/vite version of artascecreative landing...
 

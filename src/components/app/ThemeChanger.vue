@@ -1,13 +1,8 @@
 <script setup>
 import { useColorMode, useCycleList } from "@vueuse/core"
-import IconSystem from "./icons/system.svg.vue"
-import IconLight from "./icons/light.svg.vue"
-import IconDark from "./icons/dark.svg.vue"
 import DarkSvg from "./icons/dark.svg.vue"
 import LightSvg from "./icons/light.svg.vue"
 import SystemSvg from "./icons/system.svg.vue"
-
-const colors = ["light", "dark", "system"]
 
 const mode = useColorMode({
   attribute: "data-theme",
