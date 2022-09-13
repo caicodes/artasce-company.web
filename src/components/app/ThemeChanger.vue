@@ -18,8 +18,8 @@ const { next } = useCycleList(["light", "dark", "system"], {
 
 <template>
   <button @click="next()" class="btn btn-accent btn-circle btn-ghost">
-    <DarkSvg v-if="mode === 'dark'" />
-    <LightSvg v-if="mode === 'light'" />
+    <DarkSvg v-if="mode === 'light'" />
+    <LightSvg v-if="mode === 'dark'" />
     <SystemSvg v-if="mode === 'system'" />
   </button>
 </template>
